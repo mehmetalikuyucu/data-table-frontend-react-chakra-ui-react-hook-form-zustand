@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box} from "@chakra-ui/react";
+import Header from './components/header'
+import DataTable from './components/data_table'
+function App () {
+  
 
-function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    
+      <Box px={2} py={6}>
+      <Header></Header>
+      <DataTable></DataTable>
+      </Box>
+    
+  )
 }
 
-export default App;
+export default App
